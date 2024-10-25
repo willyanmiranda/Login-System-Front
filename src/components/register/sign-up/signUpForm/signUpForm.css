@@ -1,0 +1,59 @@
+.sign-up-section {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 370px;
+}
+
+.sign-up-section header {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    text-align: start;
+}
+
+.sign-up-section header h1 {
+    font-size: 36px;
+    color: #000;
+}
+
+.sign-up-section header p {
+    font-size: 16px;
+    color: #000;
+}
+
+.sign-up-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.sign-up-section form input {
+    border: none;
+    border-bottom: 1px solid  #00000066;
+    height: 32px;
+    color:  #00000066;
+    font-size: 16px;
+
+    &::placeholder {
+        color:  #00000066;
+        font-size: 16px;
+    }
+    &:focus-visible {
+        outline: none;
+        outline-offset: 0;
+    }
+}
+
+.sign-up-section footer {
+    text-align: center;
+}
+
+.sign-up-section footer p {
+    font-size: 16px;
+}
+
+.sign-up-section footer p a {
+    font-size: 16px;
+    color: #000;
+}
