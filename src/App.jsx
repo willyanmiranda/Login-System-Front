@@ -1,10 +1,10 @@
 import './App.css';
-import LoginForm from './Components/LoginForm/LoginForm';
+import Rotas from './routes';
 
 function App() {
   return (
     <div className="App">
-      <LoginForm />
+      <Rotas/>
     </div>
   );
 }
