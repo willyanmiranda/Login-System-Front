@@ -13,19 +13,26 @@
 }
 
 .sign-up-section header h1 {
-    font-size: 36px;
+    font-size: 40px;
     color: #000;
+    font-weight: 600;
 }
 
 .sign-up-section header p {
     font-size: 16px;
-    color: #000;
+    color: #6C7275;
+    font-weight: 400;
+}
+.sign-up-section header p a {
+    font-size: 16px;
+    color: #38CB89;
+    text-decoration: none;
 }
 
 .sign-up-section form {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 32px;
 }
 
 .sign-up-section form input {
@@ -34,6 +41,7 @@
     height: 32px;
     color:  #00000066;
     font-size: 16px;
+    padding-bottom: 10px;
 
     &::placeholder {
         color:  #00000066;
@@ -45,15 +53,27 @@
     }
 }
 
-.sign-up-section footer {
-    text-align: center;
+.terms-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-.sign-up-section footer p {
-    font-size: 16px;
+.terms-container input {
+    width: 24px;
+    height: 24px;
 }
 
-.sign-up-section footer p a {
+.terms-container label {
     font-size: 16px;
-    color: #000;
+    color: #6C7275;
+    font-weight: 400;
+    display: flex;
+    gap: 3px;
+}
+
+
+.terms-container label a {
+    color: #141718;
+    font-weight: 600;
 }
