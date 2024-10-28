@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from '../../../common/button/Button';
 import FormFields from '../formFields/FormFields';
-import './SignUpForm.css'
+import './signUpForm.css'
 
 const SignUpForm = ({ state, dispatch, handleSubmit }) => {
   console.log(state)
