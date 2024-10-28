@@ -7,7 +7,7 @@ const Rotas = () => {
         <BrowserRouter>
             <Routes>
                 <Route path='/register' element={<SignUpPage/>} />
-                <Route path='/login' element={<SignInPage/>} />
+                <Route path='/' element={<SignInPage/>} />
             </Routes>
         </BrowserRouter>
     </>
