@@ -1,19 +1,36 @@
 import { register } from '../../../api/authService';
 
-export const handleSubmit = async (e, state, dispatch) => {
+export const handleSubmit = async (e, state, dispatchAlert) => {
   e.preventDefault();
 
   const isEmptyField = Object.values(state).some((value) => value === '');
   if (isEmptyField) {
-    console.error("Todos os campos devem ser preenchidos");
+    dispatchAlert({
+      type: 'UPDATE_ALERT',
+      payload: { open: true, severity: 'error', message: 'Todos os campos devem ser preenchidos' },
+    });
     return;
   }
 
   if (state.password !== state.confirm_password) {
-    console.error("As senhas não batem");
+    dispatchAlert({
+      type: 'UPDATE_ALERT',
+      payload: { open: true, severity: 'error', message: 'As senhas não batem' },
+    });
     return;
   }
 
-  const userData = await register(state);
-  console.log('Usuário registrado:', userData);
+  try {
+    const userData = await register(state);
+    dispatchAlert({
+      type: 'UPDATE_ALERT',
+      payload: { open: true, severity: 'success', message: 'Usuário registrado com sucesso!' },
+    });
+    console.log('Usuário registrado:', userData);
+  } catch (error) {
+    dispatchAlert({
+      type: 'UPDATE_ALERT',
+      payload: { open: true, severity: 'error', message: 'Erro ao registrar usuário' },
+    });
+  }
 };

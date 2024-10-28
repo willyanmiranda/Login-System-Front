@@ -4,7 +4,6 @@ import FormFields from '../formFields/FormFields';
 import './signUpForm.css'
 
 const SignUpForm = ({ state, dispatch, handleSubmit }) => {
-  console.log(state)
   const handleChange = (e) => {
     const { name, value } = e.target;
     dispatch({ type: 'SET_FIELD', field: name, value });
