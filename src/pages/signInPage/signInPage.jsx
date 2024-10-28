@@ -1,6 +1,6 @@
 import SignInForm from "../../components/register/sign-in/signInForm/signInForm"
 import ImageBanner from "../../components/register/imageBanner/ImageBanner"
-import "./SignInPage.css"
+import "./signInPage.css"
 
 const SignInPage = () => {
   return (

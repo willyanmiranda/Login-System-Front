@@ -1,0 +1,42 @@
+.sign-up-section form input {
+    border: none;
+    border-bottom: 1px solid  #00000066;
+    height: 32px;
+    color:  #00000066;
+    font-size: 16px;
+    padding-bottom: 10px;
+
+    &::placeholder {
+        color:  #00000066;
+        font-size: 16px;
+    }
+    &:focus-visible {
+        outline: none;
+        outline-offset: 0;
+    }
+}
+
+.terms-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.terms-container input {
+    width: 24px;
+    height: 24px;
+}
+
+.terms-container label {
+    font-size: 16px;
+    color: #6C7275;
+    font-weight: 400;
+    display: flex;
+    gap: 3px;
+}
+
+
+.terms-container label a {
+    color: #141718;
+    font-weight: 600;
+}
