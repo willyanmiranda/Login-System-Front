@@ -15,9 +15,9 @@ const SignUpForm = ({ state, dispatch, handleSubmit }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form>
       <FormFields state={state} handleChange={handleChange} />
-      <Button text="Criar conta" type="submit" />
+      <Button handleClick={handleSubmit} text="Criar conta" />
     </form>
   );
 };
